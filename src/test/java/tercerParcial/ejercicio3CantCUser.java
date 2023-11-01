@@ -39,13 +39,21 @@ public class ejercicio3CantCUser {
 
         mainPage.signupButton.click();
 
-        nameUser= ConfigurationTOKEN.user;
-        signUpSection.fullName.setText("VivianMarino");
+        nameUser="hola"+rand.nextInt(255)+rand.nextInt(255)+"@prueba.com";
+        signUpSection.fullName.setText("Vivian Marino");
         signUpSection.email.setText(nameUser);
         signUpSection.passwordSignUp.setText("12345");
         signUpSection.checkboxTerms.click();
         signUpSection.signUpButton.click();
 
+        menuSection.logoutButton.click();
+
+        mainPage.signupButton.click();
+        signUpSection.fullName.setText("Vivian Marino");
+        signUpSection.email.setText(nameUser);
+        signUpSection.passwordSignUp.setText("12345");
+        signUpSection.checkboxTerms.click();
+        signUpSection.signUpButton.click();
 
         Thread.sleep(1000);
 
